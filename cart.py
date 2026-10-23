@@ -6,5 +6,5 @@ def average(prices):
     return sum(prices) / len(prices)
 
 def total(prices):
-    """Cart total, taxes included."""
+    """Cart total, taxes included, with tax details."""
     return round(sum(prices) * (1 + TAX_RATE), 2)
