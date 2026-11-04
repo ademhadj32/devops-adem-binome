@@ -1,4 +1,4 @@
-from cart import average, total, apply_discount
+from cart import average, total, apply_discount, shipping
 
 
 def test_average():
@@ -15,3 +15,9 @@ def test_total_empty_cart():
 
 def test_discount():
     assert apply_discount([100, 50], 10) == [90, 45]
+
+def test_shipping_small_cart():
+    assert shipping([20]) == 5
+
+def test_shipping_big_cart():
+    assert shipping([100]) == 0
