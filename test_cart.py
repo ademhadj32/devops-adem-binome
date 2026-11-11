@@ -1,4 +1,3 @@
-python
 import pytest
 from cart import average, total, apply_discount, shipping
 from stats import most_expensive
