@@ -1,6 +1,6 @@
 import pytest
 
-from cart import TAX_RATE, average, total, apply_discount, shipping
+from cart import TAX_RATE, apply_discount, average, shipping, total
 from stats import most_expensive
 
 
